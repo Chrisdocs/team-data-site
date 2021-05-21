@@ -17,7 +17,7 @@ return inquirer
 // what type of employee
     {
         type: 'list',
-        name: 'empType',
+        name: 'role',
         message: 'What type of employee would you like to add?',
         choices: [
             'Intern',
@@ -115,6 +115,18 @@ return inquirer
         }
     },
 // if Manager
+    {
+        type: 'input',
+        name: 'officeNum',
+        message: "What is the employee's office number (if any)?",
+        when: ({ Manager }) => {
+            if (Manager) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
 ])
 .then(answers => {
     writeToFile(answers);
