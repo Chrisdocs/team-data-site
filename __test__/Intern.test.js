@@ -1,7 +1,8 @@
 const Intern = require('../lib/Intern.js');
 
-test('Creates a new intern.', () => {
-    const intern = new Intern('Sue');
+test('Gets an interns school', () => {
+    const intern = new Intern('UCF');
 
-    expect(intern.name).toBe('Sue');
+    expect(intern.school).toEqual(expect.any(String));
+    expect(intern.getRole()).toEqual('Intern');
 });

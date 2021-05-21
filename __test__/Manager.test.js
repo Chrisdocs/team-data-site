@@ -1,7 +1,8 @@
 const Manager = require('../lib/Manager.js');
 
-test('Creates a new manager', () => {
-    const manager = new Manager('Carl');
+test('Gets manager office number', () => {
+    const manager = new Manager('123');
 
-    expect(manager.name).toBe('Carl');
+    expect(manager.officeNum).toEqual(expect.any(Number));
+    expect(manager.getRole()).toEqual(expect.any(String));
 })
