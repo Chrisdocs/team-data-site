@@ -46,8 +46,8 @@ return inquirer
                 return false;
             }
         },
-        when: ({ Intern, Engineer, Manager }) => {
-            if (Intern || Engineer || Manager) {
+        when: ({ role }) => {
+            if (role === 'Intern' || role === 'Engineer' || role === 'Manager') {
                 return true;
             } else {
                 return false;
@@ -67,8 +67,8 @@ return inquirer
                 return false;
             }
         },
-        when: ({ Intern, Engineer, Manager }) => {
-            if (Intern || Engineer || Manager) {
+        when: ({ role }) => {
+            if (role === 'Intern' || role === 'Engineer' || role === 'Manager') {
                 return true;
             } else {
                 return false;
@@ -80,8 +80,8 @@ return inquirer
         type: 'input',
         name: 'email',
         message: "What is the new employee's email address?",
-        when: ({ Intern, Engineer, Manager }) => {
-            if (Intern || Engineer || Manager) {
+        when: ({ role }) => {
+            if (role === 'Intern' || role === 'Engineer' || role === 'Manager') {
                 return true;
             } else {
                 return false;
@@ -93,8 +93,8 @@ return inquirer
         type: 'input',
         name: 'school',
         message: "What school does the intern attend (if any)?",
-        when: ({ Intern }) => {
-            if (Intern) {
+        when: ({ role }) => {
+            if (role === 'Intern') {
                 return true;
             } else {
                 return false;
@@ -106,8 +106,8 @@ return inquirer
         type: 'input',
         name: 'github',
         message: "What is the new employee's GitHub username?",
-        when: ({ Engineer }) => {
-            if (Engineer) {
+        when: ({ role }) => {
+            if (role === 'Engineer') {
                 return true;
             } else {
                 return false;
@@ -119,8 +119,8 @@ return inquirer
         type: 'input',
         name: 'officeNum',
         message: "What is the employee's office number (if any)?",
-        when: ({ Manager }) => {
-            if (Manager) {
+        when: ({ role }) => {
+            if (role === 'Manager') {
                 return true;
             } else {
                 return false;
@@ -140,10 +140,4 @@ return inquirer
 
 };
 
-function getName() {
-    return 'Dave';
-}
-
-// newEmployee();
-
-module.exports = { getName };
+newEmployee();
