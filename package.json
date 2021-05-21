@@ -1,0 +1,25 @@
+{
+  "name": "emp-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^8.0.0",
+    "jest": "^26.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chrisdocs/team-data-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chrisdocs/team-data-site/issues"
+  },
+  "homepage": "https://github.com/Chrisdocs/team-data-site#readme"
+}
