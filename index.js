@@ -65,4 +65,10 @@ return inquirer
 
 };
 
-newEmployee();
+function getName() {
+    return 'Dave';
+}
+
+// newEmployee();
+
+module.exports = { getName };
