@@ -22,7 +22,7 @@
     
   
   ## Usage
-  ![demo of Profile Generator](./assets/EmployeeGen.mp4)
+  ![demo of Profile Generator](./assets/demo.gif)
 
   Navigate the root file.  In your terminal, execute the app with the command "node index".  Follow the prompts, adding as many employees as needed.  Once all employees have been added, respond "no" to additional employee creation.  At this point your HTML file will be generated in the /dist directory.  The .css file which is also in the /dist directory is required for the HTML to display properly.  Copy the HTML and CSS files to where ever you need them!
     
